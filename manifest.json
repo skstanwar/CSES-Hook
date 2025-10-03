@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "CSES",
+  "version": "1.0",
+  "description": "Open IDE in Web to write the code",
+  "author": "Sanjay Saini",
+  "permissions": ["scripting", "activeTab"],
+  "content_scripts": [
+    {
+      "matches": ["https://cses.fi/problemset/task/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["src/*.txt"],
+      "matches": ["<all_urls>"]
+    }
+  ],
+  "host_permissions": [
+    "https://cses.fi/*"
+  ]
+}
