@@ -1,9 +1,11 @@
 {
   "manifest_version": 3,
-  "name": "CSES",
+  "name": "CSES Hook",
   "version": "1.0",
-  "description": "Open IDE in Web to write the code",
+  "description": "Open IDE in Web to write the code on CSES in real time, no need to upload files.",
   "author": "Sanjay Saini",
+  "homepage_url": "https://github.com/skstanwar/CSES-Hook",
+  "license": "MIT",
   "permissions": ["scripting", "activeTab"],
   "content_scripts": [
     {
